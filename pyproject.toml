@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comparador-chaves"
+version = "0.3.0"
+description = "Aplicativo desktop para comparar chaves de acesso de NF-e em banco de dados e XMLs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.7",
+    "SQLAlchemy>=2.0",
+    "keyring>=25.0",
+    "defusedxml>=0.7.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-qt>=4.4"]
+postgresql = ["psycopg[binary]>=3.2"]
+mysql = ["PyMySQL>=1.1"]
+mssql = ["pyodbc>=5.1"]
+oracle = ["oracledb>=2.5"]
+
+[project.scripts]
+comparador-chaves = "comparador.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.pyside6.deploy]
+title = "Comparador de Chaves"
+input_file = "main.py"
+exec_directory = "deployment"
+icon = "resources/icons/app.ico"
+mode = "standalone"
+extra_args = "--include-data-files=resources/icons/app.ico=resources/icons/app.ico --windows-console-mode=disable"
