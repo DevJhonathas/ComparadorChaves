@@ -1,12 +1,12 @@
-# Manual do Usuário — Comparador de Notas
+# Manual do Usuário — Comparador de Chaves
 
-Este manual explica como baixar, abrir e utilizar o **Comparador de Notas**, aplicativo desktop desenvolvido em Python para comparar chaves de acesso de NF-e armazenadas em um banco de dados com as chaves encontradas em arquivos XML.
+Este manual explica como baixar, abrir e utilizar o **Comparador de Chaves**, aplicativo desktop desenvolvido em Python para comparar chaves de acesso de NF-e armazenadas em um banco de dados com as chaves encontradas em arquivos XML.
 
 > **Importante:** o programa compara somente as chaves de acesso. Ele não compara o conteúdo integral das notas fiscais e não altera, insere ou exclui registros do banco de dados.
 
 ## 1. O que o aplicativo faz
 
-O Comparador de Notas:
+O Comparador de Chaves:
 
 1. Conecta ao banco de dados informado pelo usuário.
 2. Consulta a coluna escolhida, na tabela configurada, para obter as chaves de acesso.
@@ -32,12 +32,12 @@ O aplicativo não deve completar, truncar ou aproximar chaves inválidas. Um val
 
 ## 2. Baixar o aplicativo pelo GitHub Releases
 
-As versões executáveis do Comparador de Notas serão publicadas na seção **Releases** do repositório dedicado à distribuição do programa no GitHub.
+As versões executáveis do Comparador de Chaves serão publicadas na seção **Releases** do repositório dedicado à distribuição do programa no GitHub.
 
-1. Acesse o repositório oficial de distribuição do Comparador de Notas.
+1. Acesse o repositório oficial de distribuição do Comparador de Chaves.
 2. Abra a seção **Releases**.
 3. Entre na versão mais recente, identificada como *Latest* quando essa indicação estiver disponível.
-4. Na seção **Assets**, localize o arquivo executável do Comparador de Notas, com extensão `.exe`.
+4. Na seção **Assets**, localize o arquivo executável do Comparador de Chaves, com extensão `.exe`.
 5. Clique no arquivo `.exe` para baixá-lo.
 
 **Atenção:** baixe o executável publicado em **Assets** da versão. Não selecione os arquivos automáticos `Source code (zip)` ou `Source code (tar.gz)`: eles contêm o código-fonte do repositório, não são o aplicativo pronto para uso.
@@ -63,7 +63,7 @@ Como a distribuição é feita no modo **onefile**, o aplicativo é fornecido em
 
 1. Dê dois cliques no arquivo `.exe` baixado.
 2. Aguarde a inicialização do aplicativo. Na primeira abertura, o programa pode demorar um pouco mais porque o empacotador prepara temporariamente os componentes internos necessários à execução.
-3. Quando a janela do Comparador de Notas aparecer, o aplicativo estará pronto para ser utilizado.
+3. Quando a janela do Comparador de Chaves aparecer, o aplicativo estará pronto para ser utilizado.
 
 O modo `onefile` extrai automaticamente os componentes internos para uma área temporária do Windows durante a execução. Essa operação é feita pelo próprio programa; o usuário não precisa localizar, abrir ou copiar esses arquivos temporários.
 
@@ -300,7 +300,7 @@ O CSV pode ser utilizado para filtrar, ordenar e compartilhar o resultado da con
 
 As novas versões serão publicadas na seção **Releases** do repositório oficial no GitHub.
 
-1. Feche o Comparador de Notas, caso esteja aberto.
+1. Feche o Comparador de Chaves, caso esteja aberto.
 2. Acesse a seção **Releases** do repositório.
 3. Abra a versão mais recente.
 4. Na seção **Assets**, baixe o novo arquivo `.exe`.
@@ -365,6 +365,6 @@ Não envie senhas, dados de acesso, XMLs reais ou informações fiscais sensíve
 
 ---
 
-**Comparador de Notas — Manual do Usuário**  
+**Comparador de Chaves — Manual do Usuário**  
 Aplicativo desktop distribuído em um único executável para Windows (*onefile*).  
 As versões oficiais são disponibilizadas na seção **Releases** do repositório do projeto no GitHub.
