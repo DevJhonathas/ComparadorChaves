@@ -4,6 +4,10 @@ Este manual explica como baixar, abrir e utilizar o **Comparador de Chaves**, ap
 
 > **Importante:** o programa compara somente as chaves de acesso. Ele não compara o conteúdo integral das notas fiscais e não altera, insere ou exclui registros do banco de dados.
 
+<p align="center">
+  <img width="80%" alt="ComparadorChaves" src="https://github.com/user-attachments/assets/daf266d6-007d-46b1-a7d8-80000dffc7e5" />
+</p>
+
 ## 1. O que o aplicativo faz
 
 O Comparador de Chaves:
